@@ -24,9 +24,9 @@ static NSString * const kTextContainerInsetKey = @"textContainerInset";
 
 @implementation SZTextView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame textContainer:(NSTextContainer *)textContainer
 {
-    self = [super initWithFrame:frame];
+	self = [super initWithFrame:frame textContainer:textContainer];
     if (self) {
         [self awakeFromNib];
     }
